@@ -34,7 +34,22 @@ function pagename($page) {
             break;
         case 'delete_qa':
             $thispage = "pages_admin/qa/delete_qa.php";
-            break;             
+            break;
+        case 'sc':
+            $thispage = "pages_admin/sc/sc.php";
+            break;
+        case 'read_sc':
+            $thispage = "pages_admin/sc/read_sc.php";
+            break;
+        case 'create_sc':
+            $thispage = "pages_admin/sc/create_sc.php";
+            break;
+        case 'update_sc':
+            $thispage = "pages_admin/sc/update_sc.php";
+            break;
+        case 'delete_sc':
+            $thispage = "pages_admin/sc/delete_sc.php";
+            break;                         
         case 'error':
             $thispage = "pages_admin/error.php";
             break;            
