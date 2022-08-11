@@ -1,4 +1,4 @@
-<?php echo $page; ?>
+<?php //echo $page; ?>
 <?php $sql_menu = "SELECT * FROM categories WHERE pid = 0"; ?>
 <ul class="nav nav-pills mt-4 mb-4">
    <?php

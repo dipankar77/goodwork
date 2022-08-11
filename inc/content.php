@@ -2,7 +2,7 @@
 $sql = 'SELECT * FROM categories WHERE slug = "'.$page.'"';
 if($result = mysqli_query($link, $sql)) {
    if(mysqli_num_rows($result) > 0) { 
-      $row = mysqli_fetch_row($result); //print_r($row);
+      $row = mysqli_fetch_row($result); 
       if($row[4]==0) {
          $sql_content = 'SELECT * FROM sc WHERE pageid = '.$row[0].'';
       } else if($row[4]==1) {
@@ -15,7 +15,6 @@ if($result = mysqli_query($link, $sql)) {
       if($result_content = mysqli_query($link, $sql_content)) {
          if(mysqli_num_rows($result_content) > 0) {         
 ?>
-
 <?php
 if($row[4]==0) {
 ?>
@@ -52,5 +51,3 @@ while($row_content = mysqli_fetch_array($result_content)) { ?>
    }
 }
 ?>
-   </div>    
-</div>

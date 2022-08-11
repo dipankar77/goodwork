@@ -1,9 +1,6 @@
-<hr>
 <h6 class="text-center mt-2 mb-2">&copy Dipankar Sarkar, <?php echo date("Y"); ?></h6>
 </div>
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <!--<script src="node_modules/@popperjs/dist/umd/popper.min.js"></script>
-    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>-->
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
     <script src="js/jquery.quiz-min.js"></script>
 <script>
