@@ -1,3 +1,4 @@
+<hr>
 <h6 class="text-center mt-2 mb-2">&copy Dipankar Sarkar, <?php echo date("Y"); ?></h6>
 </div>
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
@@ -5,9 +6,9 @@
     <script src="js/jquery.quiz-min.js"></script>
 <script>
   $('#quiz').quiz({
-    //resultsScreen: '#results-screen',
-    //counter: false,
-    //homeButton: '#custom-home',
+    resultsScreen: '#results-screen',
+    counter: true,
+    homeButton: '#custom-home',
     counterFormat: 'Question %current of %total',
     questions: [
       {
