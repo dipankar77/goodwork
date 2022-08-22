@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -15,7 +15,7 @@
         <div align="center">  
              <a href="#" id="logout">Logout</a>  
         </div>  
-        <?php } ?>  
+        <?php } else { header("Location: index.php"); }?>  
     </div>
      <script>  
      $(document).ready(function(){  
