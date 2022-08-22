@@ -49,7 +49,37 @@ function pagename($page) {
             break;
         case 'delete_sc':
             $thispage = "pages_admin/sc/delete_sc.php";
-            break;                         
+            break;
+        case 'quiz':
+            $thispage = "pages_admin/quiz/quiz.php";
+            break;
+        case 'read_quiz':
+            $thispage = "pages_admin/quiz/read_quiz.php";
+            break;
+        case 'create_quiz':
+            $thispage = "pages_admin/quiz/create_quiz.php";
+            break;
+        case 'update_quiz':
+            $thispage = "pages_admin/sc/update_quiz.php";
+            break;
+        case 'delete_quiz':
+            $thispage = "pages_admin/sc/delete_quiz.php";
+            break;
+        case 'app':
+            $thispage = "pages_admin/app/app.php";
+            break;
+        case 'read_app':
+            $thispage = "pages_admin/app/read_app.php";
+            break;
+        case 'create_app':
+            $thispage = "pages_admin/app/create_app.php";
+            break;
+        case 'update_app':
+            $thispage = "pages_admin/app/update_app.php";
+            break;
+        case 'delete_app':
+            $thispage = "pages_admin/sc/delete_app.php";
+            break;                                                  
         case 'error':
             $thispage = "pages_admin/error.php";
             break;            

@@ -1,18 +1,29 @@
-<?php //echo $page; ?>
-<?php $sql_menu = "SELECT * FROM categories WHERE pid = 0"; ?>
+<?php //echo $page."<br>"; ?>
+<?php $sql_menu = "SELECT * FROM menus WHERE pid = 0"; ?>
 <ul class="nav nav-pills mt-4 mb-4">
    <?php
    if($result_menu = mysqli_query($link, $sql_menu)) {
       if(mysqli_num_rows($result_menu) > 0) {
          while($row_menu = mysqli_fetch_array($result_menu)) {
-            $sql_submenu = "SELECT * FROM categories WHERE pid=".$row_menu['id'];
-            $result_submenu = mysqli_query($link, $sql_submenu);
-            $sql_submenu_slugs = "SELECT slug FROM categories WHERE pid=".$row_menu['id'];
+            if($row_menu['cattype'] == 2) {
+               $sql_submenu = "SELECT * FROM menus WHERE cattype =2";
+               $result_submenu = mysqli_query($link, $sql_submenu);
+               $sql_submenu_slugs = "SELECT slug FROM menus WHERE cattype =2";               
+            } else if($row_menu['cattype'] == 3) {
+               $sql_submenu = "SELECT * FROM menus WHERE cattype =3";
+               $result_submenu = mysqli_query($link, $sql_submenu);
+               $sql_submenu_slugs = "SELECT slug FROM menus WHERE cattype =3";              
+            } else {
+               $sql_submenu = "SELECT * FROM menus WHERE cattype NOT IN (2,3) AND pid=".$row_menu['id'] ;
+               $result_submenu = mysqli_query($link, $sql_submenu);
+               $sql_submenu_slugs = "SELECT slug FROM menus WHERE cattype NOT IN (2,3) AND pid=".$row_menu['id'];
+            }
             $result_submenu_slugs = mysqli_query($link, $sql_submenu_slugs);
             $menu_slugs = array();
             while($row_submenu_slugs = mysqli_fetch_array($result_submenu_slugs)) {
                $menu_slugs[] = $row_submenu_slugs['slug'];
             }
+            //echo $sql_submenu."<br>";
             //echo "<pre>"; print_r($menu_slugs);            
    ?>       
    <li class="nav-item <?php if(mysqli_num_rows($result_submenu) > 0) { echo "dropdown"; } ?>">

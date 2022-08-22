@@ -6,7 +6,7 @@
       </div>
       <br>
       <?php
-         $sql = "SELECT * FROM categories";// Attempt select query execution
+         $sql = "SELECT * FROM menus";// Attempt select query execution
          if($result = mysqli_query($link, $sql)){
            if(mysqli_num_rows($result) > 0){
       ?>

@@ -27,7 +27,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){ echo ""; print_r($_POST); // Processin
         $menu_slug = $input_menu_slug;
     }    
     if(empty($menu_name_err)){ // Check input errors before inserting in database
-        $sql = "INSERT INTO categories (category_name, pid, cattype) VALUES (?, ?, ?)"; // Prepare an insert statement
+        $sql = "INSERT INTO menus (category_name, pid, cattype) VALUES (?, ?, ?)"; // Prepare an insert statement
         if($stmt = mysqli_prepare($link, $sql)){
             mysqli_stmt_bind_param($stmt, "sii", $param_head, $param_pcategory, $param_type); // Bind variables to the prepared statement as parameters
             $param_head = $menu_name; // Set parameters
@@ -57,7 +57,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){ echo ""; print_r($_POST); // Processin
             <option value="">== Select ==</option>
             <option value="0">None</option>
             <?php
-            $sql = "SELECT * FROM categories WHERE pid = 0";// Attempt select query execution
+            $sql = "SELECT * FROM menus WHERE pid = 0";// Attempt select query execution
             if($result = mysqli_query($link, $sql)){
                 if(mysqli_num_rows($result) > 0){
                     while($row = mysqli_fetch_array($result)){

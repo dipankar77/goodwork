@@ -32,7 +32,7 @@ if(isset($_POST["id"]) && !empty($_POST["id"])){ // Processing form data when fo
     }     
     if(empty($head_err) && empty($content_err) && empty($tags_err)){ // Check input errors before inserting in database
         // Prepare an update statement
-        $sql = "UPDATE menus SET category_name=? WHERE id=?";
+        $sql = "UPDATE categories SET category_name=? WHERE id=?";
         if($stmt = mysqli_prepare($link, $sql)){
             mysqli_stmt_bind_param($stmt, "si", $param_head, $param_id); // Bind variables to the prepared statement as parameters
             $param_head = $head; // Set parameters
@@ -50,7 +50,7 @@ if(isset($_POST["id"]) && !empty($_POST["id"])){ // Processing form data when fo
 } else{
     if(isset($_GET["id"]) && !empty(trim($_GET["id"]))){ // Check existence of id parameter before processing further
         $id =  trim($_GET["id"]); // Get URL parameter
-        $sql = "SELECT * FROM menus WHERE id = ?"; // Prepare a select statement
+        $sql = "SELECT * FROM categories WHERE id = ?"; // Prepare a select statement
         if($stmt = mysqli_prepare($link, $sql)){
             mysqli_stmt_bind_param($stmt, "i", $param_id); // Bind variables to the prepared statement as parameters
             $param_id = $id; // Set parameters
@@ -91,7 +91,7 @@ if(isset($_POST["id"]) && !empty($_POST["id"])){ // Processing form data when fo
             <option value="">== Select ==</option>
             <option value="0">None</option>
             <?php
-            $sql = "SELECT * FROM menus WHERE pid = 0";// Attempt select query execution
+            $sql = "SELECT * FROM categories WHERE pid = 0";// Attempt select query execution
             if($result = mysqli_query($link, $sql)){
                 if(mysqli_num_rows($result) > 0){
                     while($row = mysqli_fetch_array($result)){

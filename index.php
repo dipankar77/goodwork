@@ -2,8 +2,10 @@
 <?php include("inc/header.php"); ?>
 <?php include("inc/nav.php"); ?> 
 <?php include("inc/breadcrumb.php"); ?>
-<?php if($page == "html_quiz") {
-    include("pages/frontend/html_quiz.php");
+<?php
+//echo $page."<br>";
+if($page == "quiz") {
+    include("quiz.php");
 } else {
     include("inc/content.php");
 }

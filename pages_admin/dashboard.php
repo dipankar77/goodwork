@@ -1,5 +1,5 @@
 <?php
-$sql_menu = "SELECT count(id) FROM categories";
+$sql_menu = "SELECT count(id) FROM menus";
 if($result_menu = mysqli_query($link, $sql_menu)) {
    if(mysqli_num_rows($result_menu) > 0) {
       $row_menu = mysqli_fetch_row($result_menu);
