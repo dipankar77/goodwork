@@ -1,5 +1,5 @@
 <hr>
-<h6 class="text-center mt-2 mb-2">&copy Dipankar Sarkar, <?php echo date("Y"); ?></h6>
+<h6 class="text-center mt-2 mb-2">&copy Dipankar Sarkar ji, <?php echo date("Y"); ?></h6>
 </div>
 
 <script src="node_modules/jquery/dist/jquery.min.js"></script>

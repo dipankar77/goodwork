@@ -27,7 +27,7 @@
       <header>
         <nav class="navbar navbar-dark navbar-expand-lg bg-dark">
             <div class="container">
-                <a class="navbar-brand" href="index.php">CoderSprint</a>
+                <a class="navbar-brand" href="index.php">CoderSprinthhh</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
