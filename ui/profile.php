@@ -3,7 +3,7 @@
     <section class="text-center text-white mb-3 position-relative" style="background: url(../img/bg-3.jpg) no-repeat center;
     background-size: cover;">
         <div class="overlay w-100 h-100"></div>
-        <div class="container py-5">
+        <div class="container py-5 position-relative">
             <h1>Profile</h1>
         </div>
     </section>
@@ -98,6 +98,7 @@
                     </div>
                 </div>
                 <div class="col-md-8">
+                    <h4>Personal Profile</h4>
                     <div class="card mb-3">
                         <div class="card-body">
                             <div class="row">
@@ -156,10 +157,10 @@
 
                     <div class="row gutters-sm">
                         <div class="col-sm-6 mb-3">
+                        <h4>My Skills</h4>
                             <div class="card h-100">
                                 <div class="card-body">
-                                    <h6 class="d-flex align-items-center mb-3"><i
-                                            class="material-icons text-info mr-2">assignment</i>Project Status</h6>
+                                    
                                     <small>Web Design</small>
                                     <div class="progress mb-3" style="height: 5px">
                                         <div class="progress-bar bg-primary" role="progressbar" style="width: 80%"
@@ -189,10 +190,10 @@
                             </div>
                         </div>
                         <div class="col-sm-6 mb-3">
+                        <h4>My Projects</h4>
                             <div class="card h-100">
                                 <div class="card-body">
-                                    <h6 class="d-flex align-items-center mb-3"><i
-                                            class="material-icons text-info mr-2">assignment</i>Project Status</h6>
+                                    
                                     <small>Web Design</small>
                                     <div class="progress mb-3" style="height: 5px">
                                         <div class="progress-bar bg-primary" role="progressbar" style="width: 80%"

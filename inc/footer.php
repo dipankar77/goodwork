@@ -23,7 +23,7 @@
   </div>
   <button type="submit" class="btn btn-primary text-white fw-bold w-100">Sign In</button>
 </form>
-<p class="text-center mt-3">Don't have an Account? <a href="#">Sign Up</a></p>
+<p class="text-center mt-3">Don't have an Account? <a href="register.php">Sign Up</a></p>
       </div>
      
     </div>
