@@ -16,9 +16,7 @@
                                 <a href="#" class="btn btn-primary rounded text-white fw-bold">Browse Now</a>
                             </div>
                         </div>
-        </div>
-
-
+                            </div>
     </section>
 
     <div class="album py-5 bg-light">
