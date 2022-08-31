@@ -1,74 +1,77 @@
-<?php include("../inc/header.php"); ?>     
-      <main>
-         <section class="py-5 text-center container">
-            <div class="row py-lg-5">
-               <div class="col-lg-6 col-md-8 mx-auto">
-                  <h1 class="fw-light">Skill Categories</h1>
-                  <p class="lead text-muted">Browse through skill categories below.</p>
-               </div>
+<?php include("../inc/header.php"); ?>
+<main>
+    <section class="text-center text-white position-relative" style="background: url(../img/bg-3.jpg) no-repeat center;
+    background-size: cover;">
+        <div class="overlay w-100 h-100"></div>
+        <div class="container py-5">
+            <div class="w-50 m-auto py-5 position-relative">
+                <h2 class="fw-bold">Skilled Categories</h2>
+                <p class="lead text-white">Browse through skill categories below.</p>
             </div>
-         </section>
-         <section class="py-5">
-    <div class="container">
-        <h2 class="text-dark text-center fw-bold">Frontend <span class="text-primary">Category</span></h2>
-        <div class="row">
-            <div class="col-lg-4 col-sm-6 col-12">
-                <div class="card">
-                    <div class="card-body p-0">
-                    <div class="bg-dark text-white p-5 text-center fw-bold fs-1 rounded">HTML</div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-sm-6 col-12">
-                <div class="card">
-                    <div class="card-body p-0">
-                    <div class="bg-dark text-white p-5 text-center fw-bold fs-1 rounded">CSS</div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-sm-6 col-12">
-                <div class="card">
-                    <div class="card-body p-0">
-                    <div class="bg-dark text-white p-5 text-center fw-bold fs-1 rounded">JavaScript</div>
-                    </div>
-                </div>
-            </div>
-
         </div>
-</div>
-</section>
-<section class="py-5">
-    <div class="container">
-        <h2 class="text-dark text-center fw-bold">Backend <span class="text-primary">Category</span></h2>
-        <div class="row">
-            <div class="col-lg-4 col-sm-6 col-12">
-                <div class="card">
-                    <div class="card-body p-0">
-                    <div class="bg-dark text-white p-5 text-center fw-bold fs-1 rounded">PHP</div>
+    </section>
+    <section class="py-5">
+        <div class="container">
+            <h2 class="text-dark text-center mb-4 fw-bold">Frontend <span class="text-primary">Category</span></h2>
+            <div class="row">
+                <div class="col-lg-4 col-sm-6 col-12">
+                    <div class="card">
+                        <div class="card-body p-0">
+                            <div class="category bg-dark text-white p-5 text-center fw-bold fs-1 rounded"><a href="html-quiz.php">{ HTML }</a></div>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="col-lg-4 col-sm-6 col-12">
-                <div class="card">
-                    <div class="card-body p-0">
-                    <div class="bg-dark text-white p-5 text-center fw-bold fs-1 rounded">WordPress</div>
+                <div class="col-lg-4 col-sm-6 col-12">
+                    <div class="card">
+                        <div class="card-body p-0">
+                            <div class="category bg-dark text-white p-5 text-center fw-bold fs-1 rounded"><a href="#">{ CSS }</a></div>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="col-lg-4 col-sm-6 col-12">
-                <div class="card">
-                    <div class="card-body p-0">
-                    <div class="bg-dark text-white p-5 text-center fw-bold fs-1 rounded">Laravel</div>
+                <div class="col-lg-4 col-sm-6 col-12">
+                    <div class="card">
+                        <div class="card-body p-0">
+                            <div class="category bg-dark text-white p-5 text-center fw-bold fs-1 rounded"><a href="#">{ JavaScript }</a></div>
+                        </div>
                     </div>
                 </div>
-            </div>
 
+            </div>
         </div>
-</div>
-</section>
-      </main>
-      <!--footer start-->
+    </section>
+    <section class="py-5">
+        <div class="container">
+            <h2 class="text-dark text-center fw-bold">Backend <span class="text-primary">Category</span></h2>
+            <div class="row">
+                <div class="col-lg-4 col-sm-6 col-12">
+                    <div class="card">
+                        <div class="card-body p-0">
+                            <div class="bg-dark text-white p-5 text-center fw-bold fs-1 rounded">PHP</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 col-12">
+                    <div class="card">
+                        <div class="card-body p-0">
+                            <div class="bg-dark text-white p-5 text-center fw-bold fs-1 rounded">WordPress</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 col-12">
+                    <div class="card">
+                        <div class="card-body p-0">
+                            <div class="bg-dark text-white p-5 text-center fw-bold fs-1 rounded">Laravel</div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+</main>
+<!--footer start-->
 <?php include("../inc/footer.php"); ?>
 <!--footer end-->
-   </body>
+</body>
+
 </html>

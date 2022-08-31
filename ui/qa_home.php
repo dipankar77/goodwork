@@ -17,7 +17,7 @@
                 <div class="col-lg-4 col-sm-6 col-12">
                     <div class="card">
                         <div class="card-body p-0">
-                            <div class="category bg-dark text-white p-5 text-center fw-bold fs-1 rounded"><a href="#">{ HTML }</a></div>
+                            <div class="category bg-dark text-white p-5 text-center fw-bold fs-1 rounded"><a href="ques-ans.php">{ HTML }</a></div>
                         </div>
                     </div>
                 </div>
