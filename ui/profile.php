@@ -1,4 +1,4 @@
-<?php include("../inc/header.php"); ?>
+<?php include("inc/header.php"); ?>
 <main>
     <section class="text-center text-white mb-3 position-relative" style="background: url(../img/bg-3.jpg) no-repeat center;
     background-size: cover;">
@@ -229,9 +229,5 @@
         </div>
     </div>
 </main>
-<!--footer start-->
-<?php include("../inc/footer.php"); ?>
-<!--footer end-->
-</body>
 
-</html>
+<?php include("inc/footer.php"); ?>

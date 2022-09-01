@@ -1,4 +1,4 @@
-<?php include("../inc/header.php"); ?>      
+<?php include("inc/header.php"); ?>      
       <main>
          <section class="py-5 text-center container">
             <div class="row py-lg-5">
@@ -10,8 +10,7 @@
          </section>
          next content here
       </main>
-      <!--footer start-->
-<?php include("../inc/footer.php"); ?>
-<!--footer end-->
-   </body>
-</html>
+    
+<?php include("inc/footer.php"); ?>
+
+ 

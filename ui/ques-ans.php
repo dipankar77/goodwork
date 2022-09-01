@@ -1,4 +1,4 @@
-<?php include("../inc/header.php"); ?>
+<?php include("inc/header.php"); ?>
 <main>
     <section class="text-center text-white position-relative vh-100 bg-white">
         
@@ -59,11 +59,5 @@ In the following example the paragraph element having <code>&lt;p&gt; and &lt;/p
 </section>
 </main>
 
-<!--footer start-->
-<?php include("../inc/footer.php"); ?>
-<!--footer end-->
 
-
-</body>
-
-</html>
+<?php include("inc/footer.php"); ?>
